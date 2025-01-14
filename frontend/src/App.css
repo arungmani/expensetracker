@@ -1,0 +1,192 @@
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    background: linear-gradient(to right, aquamarine, lightblue);
+    color: darkred;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+    animation: glowing 1.5s ease-in-out infinite;
+
+
+}
+
+@keyframes glowing {
+    0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
+    50% { text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000; }
+    100% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    text-decoration: double;
+    background: linear-gradient(to right, lavender, lightyellow);
+    color: darkgreen;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  td {
+    border: 2px solid #ddd;
+    padding: 12px;
+    color: #444;
+    background-color: #f9f9f9;
+    font-weight: bold;
+
+  }
+  
+  th {
+    background: linear-gradient(to right, lightcyan, lightblue);
+    font-weight: bold;
+    color: #003366;
+    font-size: 22px;
+    border: 2px solid #ccc;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .delete-button {
+    background: linear-gradient(to right, crimson, darkred);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .delete-button:hover {
+    background: linear-gradient(to right, darkred, firebrick);
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .delete-button:active {
+    background-color: firebrick;
+    transform: scale(0.95);
+  }
+  
+
+  
+.add-new-item-table {
+    background: linear-gradient(to bottom, lightyellow, lightgoldenrodyellow);
+    border: 2px dashed orange;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    margin: 25px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: table;
+  }
+  
+  .add-new-item-table input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 90%;
+    font-size: 16px;
+    display: table-row; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .add-new-item-table button {
+    background: linear-gradient(to right, orange, darkorange);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: glowButton 1.5s ease-in-out infinite;
+    display: table-row;
+  }
+
+  @keyframes glowButton {
+    0% { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+    50% { box-shadow: 0 4px 20px rgba(255, 165, 0, 0.8); }
+    100% { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+}
+  .add-new-item-table button:hover {
+    background: linear-gradient(to right, darkorange, orangered);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .add-new-item-table input::placeholder {
+    color: gray;
+    font-style: italic;
+  }
+
+  .add-new-item-table .input-row {
+    display: table-row;
+}
+
+.add-new-item-table .input-cell {
+    display: table-cell;
+    padding: 10px;
+}
+  
+  body {
+    animation: fadeIn 1.5s ease-in-out;
+    background: url('https://i.pinimg.com/736x/7a/fb/f0/7afbf04f5c740d0a7acfacd79fe0c202.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  @keyframes backgroundShift {
+    0% { background-position: center top; }
+    50% { background-position: left top; }
+    100% { background-position: center top; }
+}
+  table {
+    animation: fadeIn 2s ease-in;
+  }
+  
+  button:hover {
+    animation: pulse 0.6s infinite;
+  }
+  
+  * {
+    transition: all 0.3s ease;
+  }
+
+ 
+table tr:hover {
+  background: linear-gradient(to right, #e6f7ff, #ccf2ff);
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+} 
+
