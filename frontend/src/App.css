@@ -147,7 +147,7 @@ table {
     transition: all 0.3s ease;
   }
 
-  /* Table Row Hover Effect */
+ 
 table tr:hover {
   background: linear-gradient(to right, #e6f7ff, #ccf2ff);
   transform: scale(1.02);
